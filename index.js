@@ -744,87 +744,87 @@ chart.render();
 
 
 
-let childrens = 
 
-[{"category":"L1","volume":9.96},{"category":"CeFi","volume":9.37},{"category":"Infrastructure","volume":9.25},{"category":"Centralized Exchange","volume":6.74},{"category":"DeFi","volume":4.86},{"category":"Gaming","volume":3.65},{"category":"Mining","volume":3.53},{"category":"NFT","volume":2.28},{"category":"Trading","volume":1.45},{"category":"Analytics","volume":1},{"category":"Scaling Solution","volume":0.99},{"category":"Social Platform","volume":0.89},{"category":"Web3","volume":0.68},{"category":"Banking","volume":0.66},{"category":"L2","volume":0.63},{"category":"Cybersecurity","volume":0.36},{"category":"IoT","volume":0.29},{"category":"Zero Knowledge Industry","volume":0.28},{"category":"Taxes","volume":0.25},{"category":"Metaverse","volume":0.25},{"category":"Smart contract audits","volume":0.15},{"category":"Smart Contract Platform","volume":0.13}]
-const new2= childrens.reduce((t,i)=>{
-  return {...t,
-    jjs:[...t.jjs,i.category],
-    maxss:[...t.maxss,i.volume] 
-  }
-
-},{maxss:[],jjs:[]});
+fetch('https://api.flipsidecrypto.com/api/v2/queries/1c456377-b1d9-4592-a2ca-406763c882a2/data/latest').then(res=>res.json()).then(data=>{
 
 
-var chart88 = {
-  series: [{
-    data: new2.maxss
-  }],
-    chart: {
-    type: 'bar',
-    height: 500
-  },
-  annotations: {
-    xaxis: [{
-      x: 10,
-      borderColor: '#00E396',
-      label: {
-        borderColor: '#00E396',
-        style: {
-          color: '#fff',
-          background: '#00E396',
-        },
-        text: 'Under 10',
-      }
-    }],
-    yaxis: [{
-      y: '',
-      y2: '',
-      label: {
-        text: ''
-      }
-    }]
-  },
-  plotOptions: {
-    bar: {
-      horizontal: true
+  const new3= data.reduce((t,i)=>{
+    return {...t,
+      jjss:[...t.jjss,i.SYMBOL_OUT],
+      minss:[...t.minss,i.VOLUME] 
     }
-  },
-  dataLabels: {
-    enabled: true
-  },
-  xaxis: {
-    categories:new2.jjs ,
-  },
-  grid: {
+  
+  },{minss:[],jjss:[]});
+  
+  
+  var chart88 = {
+    series: [{
+      data: new3.minss
+    }],
+      chart: {
+      type: 'bar',
+      height: 200
+    },
+    annotations: {
+      xaxis: [{
+        x: 10,
+        borderColor: '#00E396',
+        label: {
+          borderColor: '#00E396',
+          style: {
+            color: '#fff',
+            background: '#00E396',
+          },
+          text: '',
+        }
+      }],
+      yaxis: [{
+        y: '',
+        y2: '',
+        label: {
+          text: ''
+        }
+      }]
+    },
+    plotOptions: {
+      bar: {
+        horizontal: true
+      }
+    },
+    dataLabels: {
+      enabled: true
+    },
     xaxis: {
-      lines: {
+      categories:new3.jjss ,
+    },
+    grid: {
+      xaxis: {
+        lines: {
+          show: true
+        }
+      }
+    },
+    yaxis: {
+      reversed: false,
+      axisTicks: {
         show: true
       }
     }
-  },
-  yaxis: {
-    reversed: false,
-    axisTicks: {
-      show: true
-    }
-  }
-  };
+    };
 
 var chart = new ApexCharts(document.getElementById("chart88"), chart88);
 chart.render();
 
+})
 
 
 
+fetch('https://api.flipsidecrypto.com/api/v2/queries/8cb60719-15fb-4842-aa09-9d34baa2a0e8/data/latest').then(res=>res.json()).then(data=>{
 
-let childrenss = 
-
-[{"category":"DeFi","number":331},{"category":"Infrastructure","number":292},{"category":"NFT","number":145},{"category":"Gaming","number":131},{"category":"L1","number":131},{"category":"CeFi","number":117},{"category":"Trading","number":85},{"category":"Centralized Exchange","number":85},{"category":"Web3","number":76},{"category":"Analytics","number":52},{"category":"Mining","number":48},{"category":"Metaverse","number":44},{"category":"Social Platform","number":27},{"category":"Game","number":22},{"category":"Cybersecurity","number":17},{"category":"Payments","number":14},{"category":"Storage","number":13},{"category":"Scaling Solution","number":11},{"category":"Digital Identity","number":11},{"category":"L2","number":10},{"category":"Healthcare","number":8},{"category":"Banking","number":7},{"category":"Smart contract security","number":7},{"category":"DAO infrastructure","number":7}]
-const new3= childrenss.reduce((t,i)=>{
+const new3= data.reduce((t,i)=>{
   return {...t,
-    jjss:[...t.jjss,i.category],
-    minss:[...t.minss,i.number] 
+    jjss:[...t.jjss,i.SYMBOL_OUT],
+    minss:[...t.minss,i.TRXS] 
   }
 
 },{minss:[],jjss:[]});
@@ -836,7 +836,7 @@ var chart99 = {
   }],
     chart: {
     type: 'bar',
-    height: 500
+    height: 200
   },
   annotations: {
     xaxis: [{
@@ -848,7 +848,7 @@ var chart99 = {
           color: '#fff',
           background: '#00E396',
         },
-        text: 'Under 10',
+        text: '',
       }
     }],
     yaxis: [{
@@ -888,15 +888,15 @@ var chart99 = {
 var chart = new ApexCharts(document.getElementById("chart99"), chart99);
 chart.render();
 
+})
 
 
+fetch('https://api.flipsidecrypto.com/api/v2/queries/4db7b90d-b616-4c7d-b349-7f5092d64d20/data/latest').then(res=>res.json()).then(data=>{
 
-let children = 
-[{"volume":555,"name":"MoonPay","round":"Series A"},{"volume":423,"name":"Gemini","round":"Series A"},{"volume":400,"name":"FTX US","round":"Series A"},{"volume":200,"name":"Bithumb","round":"Series A"},{"volume":182.5,"name":"Bakkt","round":"Series A"},{"volume":150,"name":"Aptos","round":"Series A"},{"volume":138,"name":"Candy Digital","round":"Series A"},{"volume":135,"name":"LayerZero","round":"Series A+"},{"volume":110,"name":"Masterworks","round":"Series A"},{"volume":109.20,"name":"CoinList","round":"Series A"}]
-const new1= children.reduce((t,i)=>{
+const new1= data.reduce((t,i)=>{
   return {...t,
-    job_states:[...t.job_states,i.name],
-    com_numms:[...t.com_numms,i.volume] 
+    job_states:[...t.job_states,i.PLATFORM],
+    com_numms:[...t.com_numms,i.VOLUME] 
   }
 
 },{job_states:[],com_numms:[]});
@@ -907,7 +907,7 @@ var chart00 = {
   }],
     chart: {
     type: 'bar',
-    height: 350
+    height: 450
   },
   annotations: {
     xaxis: [{
@@ -958,7 +958,7 @@ var chart00 = {
 
 var chart = new ApexCharts(document.getElementById("chart00"), chart00);
 chart.render();
-
+})
 
 
 //----------------------------------------------------------------------------------
@@ -1463,13 +1463,14 @@ const new7= childrenns.reduce((t,i)=>{
 
 
 
-let childrensss = 
 
-[{"volume":16.64,"round":"ICO"},{"volume":13.83,"round":"Series B"},{"volume":11.22,"round":"Series A"},{"volume":7.25,"round":"Series C"},{"volume":6.97,"round":"Seed"},{"volume":3.6,"round":"Series D"},{"volume":3.26,"round":"Debt Financing"},{"volume":3.15,"round":"Post-IPO Equity"},{"volume":2.63,"round":"Ecosystem Foundation raise"},{"volume":2.34,"round":"Private Equity"},{"volume":1.63,"round":"Series E"},{"volume":1.22,"round":"Post-IPO Debt"},{"volume":1.12,"round":"Strategic Private Sale"},{"volume":0.98,"round":"Convertible note issuance"},{"volume":0.91,"round":"Private token sale"},{"volume":0.85,"round":"Strategic "},{"volume":0.8,"round":"Secondary Market"},{"volume":0.72,"round":"Private"},{"volume":0.5,"round":"Corporate Round"},{"volume":0.43,"round":"Pre-Seed"}]
-const news3= childrensss.reduce((t,i)=>{
+
+fetch('https://api.flipsidecrypto.com/api/v2/queries/dbb4208c-32ef-4ba8-9790-8b1e865f4d6c/data/latest').then(res=>res.json()).then(data=>{
+
+const new8= data.reduce((t,i)=>{
   return {...t,
-    jjss:[...t.jjss,i.round],
-    minss:[...t.minss,i.volume] 
+    jjss:[...t.jjss,i.DATES],
+    minss:[...t.minss,i.HOLDER] 
   }
 
 },{minss:[],jjss:[]});
@@ -1477,7 +1478,7 @@ const news3= childrensss.reduce((t,i)=>{
 
 var chart9090 = {
   series: [{
-    data: news3.minss
+    data: new8.minss
   }],
     chart: {
     type: 'area',
@@ -1485,7 +1486,7 @@ var chart9090 = {
   },
   annotations: {
     xaxis: [{
-      x: 10,
+      x: 780,
       borderColor: '#00E396',
       label: {
         borderColor: '#00E396',
@@ -1493,7 +1494,7 @@ var chart9090 = {
           color: '#fff',
           background: '#00E396',
         },
-        text: 'Under 10',
+        text: 'Hack',
       }
     }],
     yaxis: [{
@@ -1513,7 +1514,7 @@ var chart9090 = {
     enabled: true
   },
   xaxis: {
-    categories:news3.jjss ,
+    categories:new8.jjss ,
   },
   grid: {
     xaxis: {
@@ -1533,6 +1534,7 @@ var chart9090 = {
 var chart = new ApexCharts(document.getElementById("chart9090"), chart9090);
 chart.render();
 
+})
 
 
 
@@ -1541,13 +1543,13 @@ chart.render();
 
 
 
-let childr = 
 
-[{"volume":422,"round":"pre-IPO"},{"volume":420.69,"round":"Series B1"},{"volume":203.56,"round":"Series E"},{"volume":200,"round":"Loan"},{"volume":200,"round":"Series C-1"},{"volume":186.48,"round":"Strategic Private Sale"},{"volume":163.47,"round":"Series D"},{"volume":160.08,"round":"Secondary Market"},{"volume":150,"round":"pre-Series B"},{"volume":131.25,"round":"Ecosystem Foundation raise"},{"volume":115.07,"round":"Series C"},{"volume":97.44,"round":"Private Equity"},{"volume":80,"round":"Series B2"},{"volume":70.89,"round":"Debt Financing"},{"volume":64.58,"round":"Series F"},{"volume":64.34,"round":"Series B"},{"volume":55,"round":"Series A & B"},{"volume":53.23,"round":"Post-IPO Debt"},{"volume":43.57,"round":"ICO"},{"volume":36.22,"round":"Private token sale"}]
-const new8= childr.reduce((t,i)=>{
+fetch('https://api.flipsidecrypto.com/api/v2/queries/c1146c65-f255-432e-b36d-9a6097f95132/data/latest').then(res=>res.json()).then(data=>{
+
+const new8= data.reduce((t,i)=>{
   return {...t,
-    jjss:[...t.jjss,i.round],
-    minss:[...t.minss,i.volume] 
+    jjss:[...t.jjss,i.DATE],
+    minss:[...t.minss,i.PRICE] 
   }
 
 },{minss:[],jjss:[]});
@@ -1563,7 +1565,7 @@ var chart9091 = {
   },
   annotations: {
     xaxis: [{
-      x: 10,
+      x: 780,
       borderColor: '#00E396',
       label: {
         borderColor: '#00E396',
@@ -1571,7 +1573,7 @@ var chart9091 = {
           color: '#fff',
           background: '#00E396',
         },
-        text: 'Under 10',
+        text: 'Hack',
       }
     }],
     yaxis: [{
@@ -1611,3 +1613,420 @@ var chart9091 = {
 var chart = new ApexCharts(document.getElementById("chart9091"), chart9091);
 chart.render();
 
+})
+
+
+
+
+
+
+
+
+
+fetch('https://api.flipsidecrypto.com/api/v2/queries/14060997-a7ab-407c-b66d-4b5431bfe1c4/data/latest').then(res=>res.json()).then(data=>{
+
+const new8= data.reduce((t,i)=>{
+  return {...t,
+    jjss:[...t.jjss,i.DATE],
+    minss:[...t.minss,i.VOLUME] 
+  }
+
+},{minss:[],jjss:[]});
+
+
+var chart9089 = {
+  series: [{
+    name: '',
+    type: 'area',
+    data: (new8.minss)
+  }],
+  chart: {
+  height: 350,
+  type: 'line',
+  stacked: true,
+},
+stroke: {
+  width: [0, 2, 5],
+  curve: 'smooth'
+},
+plotOptions: {
+  bar: {
+    columnWidth: '100%'
+  }
+},
+
+fill: {
+  opacity: [0.85, 0.25, 1],
+  gradient: {
+    inverseColors: false,
+    shade: 'light',
+    type: "vertical",
+    opacityFrom: 0.85,
+    opacityTo: 0.55,
+    stops: [0, 100, 100, 100]
+  }
+},
+labels: new8.jjss,
+markers: {
+  size: 0
+},
+xaxis: {
+  type: 'Century'
+},
+yaxis: {
+  title: {
+    text: '',
+  },
+  min: 0
+},
+annotations: {
+  xaxis: [{
+    x: 775 ,
+    borderColor: '#999',
+    yAxisIndex: 0,
+    label: {
+      show: true,
+      text: 'Hack',
+      style: {
+        color: "#fff",
+        background: '#775DD0'
+      }
+    }
+  }]
+},
+fill: {
+  type: 'gradient',
+  gradient: {
+    shadeIntensity: 1,
+    opacityFrom: 0.7,
+    opacityTo: 0.9,
+    stops: [0, 100]
+  }
+},
+tooltip: {
+  shared: true,
+  intersect: false,
+  y: {
+    formatter: function (y) {
+      if (typeof y !== "undefined") {
+        return y.toFixed(0) + " $";
+      }
+      return y;
+
+    }
+  }
+}
+};
+var chart = new ApexCharts(document.getElementById("chart9089"), chart9089);
+chart.render();
+
+})
+
+
+
+
+
+
+
+
+
+fetch('https://api.flipsidecrypto.com/api/v2/queries/a7256375-b70d-4ccc-9f53-971826b73f80/data/latest').then(res=>res.json()).then(data=>{
+
+const new1= data.reduce((t,i)=>{
+  return {...t,
+    job_states:[...t.job_states,i.DATE],
+    com_numms:[...t.com_numms,i.TRXS] 
+  }
+
+},{job_states:[],com_numms:[]});
+
+var chart24 = {
+  series: [{
+    name: 'Swaps',
+    type: 'area',
+    data: (new1.com_numms)
+  }],
+  chart: {
+  height: 350,
+  type: 'line',
+  stacked: true,
+},
+stroke: {
+  width: [0, 2, 5],
+  curve: 'smooth'
+},
+plotOptions: {
+  bar: {
+    columnWidth: '100%'
+  }
+},
+
+fill: {
+  opacity: [0.85, 0.25, 1],
+  gradient: {
+    inverseColors: false,
+    shade: 'light',
+    type: "vertical",
+    opacityFrom: 0.85,
+    opacityTo: 0.55,
+    stops: [0, 100, 100, 100]
+  }
+},
+labels: new1.job_states,
+markers: {
+  size: 0
+},
+xaxis: {
+  type: 'Century'
+},
+yaxis: {
+  title: {
+    text: 'Swap Number',
+  },
+  min: 0
+},
+annotations: {
+  xaxis: [{
+    x: 775 ,
+    borderColor: '#999',
+    yAxisIndex: 0,
+    label: {
+      show: true,
+      text: 'Hack',
+      style: {
+        color: "#fff",
+        background: '#775DD0'
+      }
+    }
+  }]
+},
+fill: {
+  type: 'gradient',
+  gradient: {
+    shadeIntensity: 1,
+    opacityFrom: 0.7,
+    opacityTo: 0.9,
+    stops: [0, 100]
+  }
+},
+tooltip: {
+  shared: true,
+  intersect: false,
+  y: {
+    formatter: function (y) {
+      if (typeof y !== "undefined") {
+        return y.toFixed(0) + " ";
+      }
+      return y;
+
+    }
+  }
+}
+};
+
+var chart = new ApexCharts(document.getElementById("chart24"), chart24);
+chart.render();
+})
+
+
+
+
+fetch('https://api.flipsidecrypto.com/api/v2/queries/a7256375-b70d-4ccc-9f53-971826b73f80/data/latest').then(res=>res.json()).then(data=>{
+
+const new1= data.reduce((t,i)=>{
+  return {...t,
+    job_states:[...t.job_states,i.DATE],
+    com_numms:[...t.com_numms,i.VOLUME] 
+  }
+
+},{job_states:[],com_numms:[]});
+
+var chart25 = {
+  series: [{
+    name: 'Swap Volume',
+    type: 'area',
+    data: (new1.com_numms)
+  }],
+  chart: {
+  height: 350,
+  type: 'line',
+  stacked: true,
+},
+stroke: {
+  width: [0, 2, 5],
+  curve: 'smooth'
+},
+plotOptions: {
+  bar: {
+    columnWidth: '100%'
+  }
+},
+
+fill: {
+  opacity: [0.85, 0.25, 1],
+  gradient: {
+    inverseColors: false,
+    shade: 'light',
+    type: "vertical",
+    opacityFrom: 0.85,
+    opacityTo: 0.55,
+    stops: [0, 100, 100, 100]
+  }
+},
+labels: new1.job_states,
+markers: {
+  size: 0
+},
+xaxis: {
+  type: 'Century'
+},
+yaxis: {
+  title: {
+    text: 'Swap Volume',
+  },
+  min: 0
+},
+annotations: {
+  xaxis: [{
+    x: 775 ,
+    borderColor: '#999',
+    yAxisIndex: 0,
+    label: {
+      show: true,
+      text: 'Hack',
+      style: {
+        color: "#fff",
+        background: '#775DD0'
+      }
+    }
+  }]
+},
+fill: {
+  type: 'gradient',
+  gradient: {
+    shadeIntensity: 1,
+    opacityFrom: 0.7,
+    opacityTo: 0.9,
+    stops: [0, 100]
+  }
+},
+tooltip: {
+  shared: true,
+  intersect: false,
+  y: {
+    formatter: function (y) {
+      if (typeof y !== "undefined") {
+        return y.toFixed(0) + " $";
+      }
+      return y;
+
+    }
+  }
+}
+};
+
+var chart = new ApexCharts(document.getElementById("chart25"), chart25);
+chart.render();
+})
+
+
+
+
+
+fetch('https://api.flipsidecrypto.com/api/v2/queries/a7256375-b70d-4ccc-9f53-971826b73f80/data/latest').then(res=>res.json()).then(data=>{
+
+const new1= data.reduce((t,i)=>{
+  return {...t,
+    job_states:[...t.job_states,i.DATE],
+    com_numms:[...t.com_numms,i.USERS] 
+  }
+
+},{job_states:[],com_numms:[]});
+
+var chart26 = {
+  series: [{
+    name: 'Swappers',
+    type: 'area',
+    data: (new1.com_numms)
+  }],
+  chart: {
+  height: 350,
+  type: 'line',
+  stacked: true,
+},
+stroke: {
+  width: [0, 2, 5],
+  curve: 'smooth'
+},
+plotOptions: {
+  bar: {
+    columnWidth: '100%'
+  }
+},
+
+fill: {
+  opacity: [0.85, 0.25, 1],
+  gradient: {
+    inverseColors: false,
+    shade: 'light',
+    type: "vertical",
+    opacityFrom: 0.85,
+    opacityTo: 0.55,
+    stops: [0, 100, 100, 100]
+  }
+},
+labels: new1.job_states,
+markers: {
+  size: 0
+},
+xaxis: {
+  type: 'Century'
+},
+yaxis: {
+  title: {
+    text: 'Swappers',
+  },
+  min: 0
+},
+annotations: {
+  xaxis: [{
+    x: 775 ,
+    borderColor: '#999',
+    yAxisIndex: 0,
+    label: {
+      show: true,
+      text: 'Hack',
+      style: {
+        color: "#fff",
+        background: '#775DD0'
+      }
+    }
+  }]
+},
+fill: {
+  type: 'gradient',
+  gradient: {
+    shadeIntensity: 1,
+    opacityFrom: 0.7,
+    opacityTo: 0.9,
+    stops: [0, 100]
+  }
+},
+tooltip: {
+  shared: true,
+  intersect: false,
+  y: {
+    formatter: function (y) {
+      if (typeof y !== "undefined") {
+        return y.toFixed(0) + " ";
+      }
+      return y;
+
+    }
+  }
+}
+};
+
+var chart = new ApexCharts(document.getElementById("chart26"), chart26);
+chart.render();
+})
