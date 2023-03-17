@@ -40,7 +40,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
 
             <a class="navbar-brand aa" href="">
@@ -86,7 +86,7 @@
             </div>
             <div class="carousel-inner">
                 <a class="carousel-item active" target="_blank" href=""
-                    style="background-image: url('page/img/joker.jpg')">
+                    style="background-image: url('page/img/discord-hacking.gif') ;height :500px ;">
                     <!--#change image url-->
                     <div class="carousel-caption">
                         <h5> </h5>
@@ -97,23 +97,8 @@
 
                     </div>
                 </a>
-                <a class="carousel-item" target="_blank" href="" style="background-image: url('page/img/sub.png')">
-                    <!--#change image url-->
-                    <div class="carousel-caption">
-                        <p style="color :rgb(255, 255, 255); text-align: start;font-weight: bold; font-family:cursive;">
-                        </p>
-                        <!--#change-->
-                    </div>
-                </a>
-                <a class="carousel-item" target="_blank" href="" style="background-image: url('page/img/birds.png')">
-                    <!--#change image url-->
-                    <div class="carousel-caption">
-                        <p style="color :rgb(255, 255, 255); text-align: start;font-weight: bold; font-family:cursive;">
 
-                        </p>
-                        <!--#change-->
-                    </div>
-                </a>
+
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="prev">
@@ -206,48 +191,61 @@
             What Happend to The Platform </div>
 
 
-            <div class="mb-5"
+        <div class="mb-5"
             style="border-radius: 25px; width:100%;  background: linear-gradient(to bottom,  #c5ecec 0%, #efd8fa 100%);padding: 20px; ">
-           
-            
-            <p class="mt-1 mt-3" style="font-family:serif">On 13 March 2023 at 08:56:35 AM +UTC, DeFi lending protocol Euler
-            Finance experienced a Flash Loan Attack.</p>
-        <p class="mt-1 " style="font-family:serif">Based on on-chain data analysis, the attacker has successfully
-            executed multiple transactions resulting in the theft of approximately $196 million, making it the largest
-            hack of 2023 thus far. Stolen assets include several million worth of DAI, USDC, Staked Ether (StETH), and
-            Wrapped Bitcoin (WBTC).</p>
-        <p class="mt-1 " style="font-family:serif">The attack was possible due to a lack of liquidity checks in the
-            donateToReserves function of the Etoken. The attacker executed multiple calls with different currencies to
-            generate profit, resulting in a massive loss of $196 million across six different tokens. Currently, the
-            funds remain in the attacker’s account.</p>
-        <p class="mt-1 " style="font-family:serif">1. The attacker first borrowed 30 million DAI through a flash loan
-            from Aave and then deployed two contracts: one for lending and one for liquidation.</p>
-        <p class="mt-1 " style="font-family:serif">2. The attacker then called the deposit function and pledged 20
-            million DAI to the Euler Protocol contract, receiving 19.5 million eDAI in return.</p>
-        <p class="mt-1 " style="font-family:serif">3. The Euler Protocol allows users to borrow up to 10 times their
-            deposit by calling the mint function. The attacker leveraged this capability to borrow 195.6 million eDAI
-            and 200 million dDAI.</p>
-        <p class="mt-1 " style="font-family:serif">4. The attacker called the repay function using the remaining 10
-            million DAI borrowed through the flash loan to repay their debt and destroy 10 million dDAI. They then
-            proceeded to call the mint function again to borrow 195.6 million eDAI and 200 million dDAI.
 
-        </p>
-        <p class="mt-1 " style="font-family:serif">5. The attacker then called the donateToReserves function and donated
-            10 times the amount needed to repay their debt, sending 100 million eDAI. They then called the liquidate
-            function to initiate the liquidation process and obtained 310 million dDAI and 250 million eDAI.
 
-        </p>
-        <p class="mt-1 " style="font-family:serif">6. The attacker called the withdraw function and obtained 38.9
-            million DAI, which they used to repay the 30 million DAI borrowed through the flash loan. They profited 8.87
-            million DAI from the attack.
+            <p class="mt-1 mt-3" style="font-family:serif">On 13 March 2023 at 08:56:35 AM +UTC, DeFi lending protocol
+                Euler
+                Finance experienced a Flash Loan Attack.</p>
+            <p class="mt-1 " style="font-family:serif">Based on on-chain data analysis, the attacker has successfully
+                executed multiple transactions resulting in the theft of approximately $196 million, making it the
+                largest
+                hack of 2023 thus far. Stolen assets include several million worth of DAI, USDC, Staked Ether (StETH),
+                and
+                Wrapped Bitcoin (WBTC).</p>
+            <p class="mt-1 " style="font-family:serif">The attack was possible due to a lack of liquidity checks in the
+                donateToReserves function of the Etoken. The attacker executed multiple calls with different currencies
+                to
+                generate profit, resulting in a massive loss of $196 million across six different tokens. Currently, the
+                funds remain in the attacker’s account.</p>
+            <p class="mt-1 " style="font-family:serif">1. The attacker first borrowed 30 million DAI through a flash
+                loan
+                from Aave and then deployed two contracts: one for lending and one for liquidation.</p>
+            <p class="mt-1 " style="font-family:serif">2. The attacker then called the deposit function and pledged 20
+                million DAI to the Euler Protocol contract, receiving 19.5 million eDAI in return.</p>
+            <p class="mt-1 " style="font-family:serif">3. The Euler Protocol allows users to borrow up to 10 times their
+                deposit by calling the mint function. The attacker leveraged this capability to borrow 195.6 million
+                eDAI
+                and 200 million dDAI.</p>
+            <p class="mt-1 " style="font-family:serif">4. The attacker called the repay function using the remaining 10
+                million DAI borrowed through the flash loan to repay their debt and destroy 10 million dDAI. They then
+                proceeded to call the mint function again to borrow 195.6 million eDAI and 200 million dDAI.
 
-        </p>
+            </p>
+            <p class="mt-1 " style="font-family:serif">5. The attacker then called the donateToReserves function and
+                donated
+                10 times the amount needed to repay their debt, sending 100 million eDAI. They then called the liquidate
+                function to initiate the liquidation process and obtained 310 million dDAI and 250 million eDAI.
 
-        <img style="width: 100%;border-radius: 25px;" src ="https://pbs.twimg.com/media/FrF2t-DaYAAXLY_?format=png&name=large"title="reason">
+            </p>
+            <p class="mt-1 " style="font-family:serif">6. The attacker called the withdraw function and obtained 38.9
+                million DAI, which they used to repay the 30 million DAI borrowed through the flash loan. They profited
+                8.87
+                million DAI from the attack.
 
-        <p class="mt-5 mb-5" style="font-family:serif">The hack is made possible due to the flawed logic its donation and liquidation. Specifically, the donateToReserves needs to ensure the donator is still over-collateralized.  And liquidation needs to ensure the *correct* conversion rate from borrow to collateral asset.</p>
-<img style="width: 100%;border-radius: 25px;" src ="https://pbs.twimg.com/media/FrGCkKQaQAE030q?format=jpg&name=4096x4096" title="reason">
-    </div>
+            </p>
+
+            <img style="width: 100%;border-radius: 25px;"
+                src="https://pbs.twimg.com/media/FrF2t-DaYAAXLY_?format=png&name=large" title="reason">
+
+            <p class="mt-5 mb-5" style="font-family:serif">The hack is made possible due to the flawed logic its
+                donation and liquidation. Specifically, the donateToReserves needs to ensure the donator is still
+                over-collateralized. And liquidation needs to ensure the *correct* conversion rate from borrow to
+                collateral asset.</p>
+            <img style="width: 100%;border-radius: 25px;"
+                src="https://pbs.twimg.com/media/FrGCkKQaQAE030q?format=jpg&name=4096x4096" title="reason">
+        </div>
 
 
         <table
@@ -319,10 +317,37 @@
 
 
 
-        <p class="mt-5 " style="font-family:serif">Two hackers were involved in the attack: 0xebc29199c817dc47ba12e3f86102564d640cbf99
-            and 0xb66cd966670d962c227b3eaba30a872dbfb995db.  And here comes the flow of stolen funds
+        <p class="mt-5 " style="font-family:serif">Two hackers were involved in the attack:
+            0xebc29199c817dc47ba12e3f86102564d640cbf99
+            and 0xb66cd966670d962c227b3eaba30a872dbfb995db. And here comes the flow of stolen funds
         </p>
-<img style="width:100%" src="https://pbs.twimg.com/media/FrGEt0naUAULMpn?format=jpg&name=4096x4096" title="hack flow" >
+        <img style="width:100%" src="https://pbs.twimg.com/media/FrGEt0naUAULMpn?format=jpg&name=4096x4096"
+            title="hack flow">
+
+
+        <h3 class="mt-5 mb-5 bb" style="font-family:serif">Lets take a look at the portfolio and history of hacker's
+            address</h3>
+        <div class="row">
+
+            <div class="col-md-6">
+                <h3 class="mt-5 mb-5 bb" style="font-family:serif">Wallet # 1</h3>
+
+                <iframe class=" mb-5"
+                    src="https://portfolio.nansen.ai/dashboard/0xebc29199c817dc47ba12e3f86102564d640cbf99?tab=transactions"
+                    width="100%" height="600" style="border-radius: 25px;">
+                </iframe>
+            </div>
+
+            <div class="col-md-6">
+                <h3 class="mt-5 mb-5 bb" style="font-family:serif">Wallet # 2</h3>
+
+                <iframe
+                    src="https://portfolio.nansen.ai/dashboard/0xb66cd966670d962c227b3eaba30a872dbfb995db?tab=transactions"
+                    width="100%" height="600" style="border-radius: 25px;">
+                </iframe>
+            </div>
+        </div>
+
         </p><strong><code>Euler Finance stated:</code></strong>
         <P>
 
@@ -330,8 +355,7 @@
                 counsels. We will release further information as soon as we have it.”</i>
 
         </p>
-        <p>Immediately after the news of the attack on Euler Finance was released, the price of EUL token of
-            this protocol dropped by 48% to $3.10.
+        <p>
 
             Euler Finance is a DeFi loan protocol and in 2022, it was able to raise $32 million in a funding
             round with the participation of cryptocurrency exchanges such as Binance and FTX.</p>
@@ -342,20 +366,29 @@
 
 
         <div class="row mt-5 mb-5 ">
-     
+            <div class="col-md-2 mt-4 mb-3"> </div>
+            <div class="col-md-8 mt-4 mb-3">
+                <img src="page/img/hack-hacker.gif" style="width:100% ;height:200px;border-radius: 25px;">
+            </div>
+            <p class="mt-5" style="font-family:serif">In this part, we will examine the effects of the 2023 hack, one of
+                the largest cyber-attacks in history. We will not focus on the TVL chart, but rather assess the impact
+                on a select few digital currencies. Specifically, we will analyze the behavior of users for the same six
+                currencies that were stolen in the hack.</p>
+            <div class="col-md-2 mt-4 mb-3"> </div>
+
             <div class="row mt-4 mb-3">
 
                 <div class="col-md-12" id="chart11" style="width: 100%; height: 100px;">
                     <i>
-                        <p class="mb-2 mt-5 bb"> * Daily Euler TVL  </p>
+                        <p class="mb-2 mt-5 bb"> * Daily Euler TVL </p>
                     </i>
                 </div>
 
             </div>
-            
 
 
-            
+
+
             <div class="row mt-4 mb-3">
 
                 <div class="col-md-12" id="chart1" style="width: 100%; height: 100px;">
@@ -365,7 +398,7 @@
                 </div>
 
             </div>
-         
+
             <div class="row mt-4">
 
 
@@ -386,28 +419,33 @@
                         <p class="mb-2 mt-5 bb"> * Euler Reserves</p>
                     </i></div>
 
-                    <div class="col-md-6 mb-5" id="chart6" style="width: 100%; max-height: 100px;"><i>
-                        <p class="mb-2 mt-5 bb"> *  Daily withdraw Volume ($)</p>
+                <div class="col-md-6 mb-5" id="chart6" style="width: 100%; max-height: 100px;"><i>
+                        <p class="mb-2 mt-5 bb"> * Daily withdraw Volume ($)</p>
                     </i></div>
 
                 <div class="col-md-6 mb-5" id="chart7" style="width: 100%; max-height: 100px;"><i>
-                        <p class="mb-2 mt-5 bb"> *  Daily deposit Volume ($)</p>
+                        <p class="mb-2 mt-5 bb"> * Daily deposit Volume ($)</p>
                     </i></div>
             </div>
-            <p class="mt-5" style="font-family:serif">In the 19th century, data science jobs did not exist since the
-                field of data science was not developed until the 20th century. As a result, there are no data science
-                jobs to compare between the 19th and 20th centuries.
-                In the 20th century, the number of data science job type and number of jobs in the US were still very
-                small due to the lack of technology and data science knowledge available. However, the number of data
-                science jobs began to grow with the development of new technology and the emergence of data science as a
-                field of study.
-                In the 21st century, the number of data science jobs has grown exponentially due to the increased demand
-                for data analysts in many industries. This is mainly due to the emergence of big data, which has enabled
-                businesses to better understand their customers and make better decisions. Additionally, the development
-                of sophisticated machine learning algorithms has enabled businesses to automate processes and improve
-                efficiency. As a result, the number of data science jobs has increased significantly.
+            <p class="mt-5" style="font-family:serif">TVL (Total Value Locked) is a metric used to measure the value
+                locked into a decentralized finance (DeFi) application or protocol. It is usually calculated by adding
+                the total value of cryptocurrencies or tokens locked in the protocol. TVL is an important metric for
+                DeFi projects as it indicates the amount of capital invested in the application or protocol and can be
+                used to compare the success of projects in the DeFi space.</p>
+
+            <p class="mt-2" style="font-family:serif">The TVL of Euler Finance changed after the hack because the
+                hackers were able to access and exploit the smart contract, allowing them to withdraw a large amount of
+                funds. This caused a significant decrease in the total value locked (TVL) in the platform.
             </p>
 
+            <p class="mt-2" style="font-family:serif">
+                TVL (Total Value Locked) may have initially decreased after the platform was hacked, but the charts
+                demonstrate a significant increase in this amount. This could be due to security companies running more
+                hacking tests to ensure the platform is secure. Additionally, the amount of deposits, withdrawals, and
+                borrowing on this platform has risen drastically after the hack, suggesting that users are moving their
+                assets to the platform out of concern for their safety, and this has resulted in a higher volume of
+                activity.
+            </p>
 
         </div>
 
@@ -428,7 +466,7 @@
             <div class="row mt-4">
                 <div class="col-md-12">
                     <div class="col-md-12 mb-5" id="chart9091" style="width: 100%; max-height: 100px;"><i>
-                            <p class="mb-2 mt-5 bb"> * Avg amount raised (Each stage) (M$)</p>
+                            <p class="mb-2 mt-5 bb"> * Euler Token Price</p>
                         </i></div>
 
 
@@ -437,16 +475,16 @@
 
 
                 <p class="mt-5" style="font-family:serif">
-                    The companies with the highest maximum salary are Grand Rounds, Gallup, and Sage Intacct at $171,
-                    $200, and $176 respectively. The companies with the highest maximum salary are Nektar Therapeutics,
-                    Grainger, and Gallup at $231, $220, and $275 respectively. The largest companies by size are
-                    Grainger, DTCC, and Samsung Research America with more than 10,000, 5,000, and 5,000 employees
-                    respectively. The oldest companies are Grainger, DTCC, and Gallup founded in 1927, 1973, and 1935
-                    respectively. The companies with the highest revenue are Grainger, DTCC, and BioMarin Pharmaceutical
-                    with $10+ billion, $1 to $2 billion, and $500 million to $1 billion respectively. The type of
-                    ownership for most of the companies is either Company - Private or Company - Public. Also,
-                    interesting points in this chart are that most companies are located in San Francisco and half of
-                    them were private companies.</p>
+                    a sudden drop in the value of the Euler (EUL) token. The value of the token dropped 44.2% overnight,
+                    from $6.56 to $3.37. This drastic decrease in value has continued, and the token is now being traded
+                    at $2.74, meaning that it has lost almost 55% of its value in less than two days. This sudden drop
+                    in value has likely had a major impact on investors and those who own the token.
+
+
+                    The future of the Euler token is uncertain, and it remains to be seen if the value will recover or
+                    continue to fall. Investors are likely keeping an eye on the market, looking for any signs of
+                    recovery and hoping that the value of the token will eventually rebound. Until then, the market
+                    remains volatile and those invested in the Euler</p>
 
 
 
@@ -461,27 +499,79 @@
 
 
                 <div class="col-md-12 mb-5" id="chart9090" style="width: 100%; max-height: 100px;"><i>
-                        <p class="mb-2 mt-5 bb"> * Largest round (B$)</p>
+                        <p class="mb-2 mt-5 bb"> * Number of EUL Holders </p>
                     </i></div>
 
-                <div class="row mt-3  ">
-        
 
-                    <div class="col-md-6 mb-5" id="chart00" style="width: 100%; max-height: 100px;"><i>
-                            <p class="mb-2 mt-5 bb"> * List of Top 5 % Companies - Series A (M$) </p>
+                <p class="mt-2 mb-5" style="font-family:serif">
+                    As depicted in the chart above, the number of people who have held eur tokens in their wallets is
+                    shown. Following the hacking of this platform, there was a slight decrease in the number of holders;
+                    however, this decrease was not substantial.
+
+                    Currently, the number of holders stands at around 2427, which is only 500 wallets away from the
+                    maximum number of 2500 holders. Despite the unfortunate incident, this is a relatively encouraging
+                    result and could have been much worse.</p>
+
+
+                <div class="col-md-12 mb-5" id="chart9089" style="width: 100%; max-height: 100px;"><i>
+                        <p class="mb-2 mt-5 bb"> * Destination of Token's transfer </p>
+                    </i></div>
+
+
+
+
+
+                <div class="row mt-3  ">
+
+
+                    <div class="col-md-8 mb-5" id="chart00" style="width: 100%; max-height: 100px;"><i>
+                            <p class="mb-2 mt-5 bb"> * List of Top 10 Destination (Volume) </p>
                         </i></div>
-                    <p class="mt-5" style="font-family:serif">In this section, we have schematically shown the states
-                        that pay the lowest and highest salaries in companies. Based on this information, you can see
-                        that CA has the highest salary and NE has the lowest salary.</p>
+
+
+                    <div class="col-md-4 mb-5">
+                        <p class="mt-5" style="font-family:serif"> This text is describing an activity that happened
+                            during a hack day involving the token $EUL. It explains that the activity of transferring
+                            $EUL increased significantly, with the most popular destination being various exchanges,
+                            both decentralized and centralized. This suggests that users were transferring their $EUL to
+                            exchanges in order to sell it or swap it for other tokens.
+                        </p>
+                        <p class="mt-1" style="font-family:serif"> The data also shows that users were taking advantage
+                            of the decentralized exchanges as well
+                            as the centralized ones. This is likely because decentralized exchanges provide a higher
+                            level of security and privacy, as well as lower trading fees. Furthermore, users may have
+                            been attracted to the decentralized exchanges because they offer a wider range of tokens
+                            than the centralized exchanges. </p>
+                    </div>
+
+
+
+                    <p class="mt-5" style="font-family:serif">
+                        The recent Hack Day event has caused a surge in activity on the Euler Protocol, with a large
+                        influx of users performing transactions.
+
+                        It appears that these users were trying to withdraw their assets from the platform in order to
+                        protect themselves from any potential future risks associated with the exploit.
+
+                        Following the attack, all Euler contract activity has come to a standstill, and there has been
+                        no further transactions on any of the contracts.
+
+                        This can be verified by watching activity charts in this article and also dune dashboards.
+
+
+                        The exploit attack has had a notable impact on the Euler Protocol, as it has caused a drastic
+                        increased in activity and transactions on the platform, due to users wanting to protect their
+                        assets. As a result, the Euler Protocol has been put on hold, until it is safe to use again.</p>
+
+                    <strong class="mb-5 mt-5 bb" style="font-size: larger;font-weight: bold;"> Swap Activity
+                    </strong>
 
                     <div class="col-md-6 mb-5" id="chart99" style="width: 100%; max-height: 100px;"><i>
-                            <p class="mb-2 mt-5 bb"> * % of startups in this category with an NFT collection or a
-                                token(based on project)</p>
+                            <p class="mb-2 mt-5 bb"> * Destination Torkens After swap (# Transactions)</p>
                         </i></div>
 
                     <div class="col-md-6 mb-5" id="chart88" style="width: 100%; max-height: 100px;"><i>
-                            <p class="mb-2 mt-5 bb"> * % of startups in this category with an NFT collection or a token
-                                (based on volume)(B$)</p>
+                            <p class="mb-2 mt-5 bb"> * Destination Torkens After swap (Volume)</p>
                         </i></div>
 
 
@@ -489,33 +579,69 @@
 
 
 
+                <div class="row mt-2 mb-5">
+                    <div class="col-md-4" id="chart24" style="width: 80%;height:300px;"><i>
+                            <p class="mb-2 mt-5 bb"> * Number of Swaps </p>
+                        </i></div>
+                    <div class="col-md-4" id="chart25" style="width: 80%;height:300px;"><i>
+                            <p class="mb-2 mt-5 bb"> * Swap Volume </p>
+                        </i></div>
+                    <div class="col-md-4" id="chart26" style="width: 80%;height:300px;"><i>
+                            <p class="mb-2 mt-5 bb"> * Number of Swappers </p>
+                        </i></div>
+                    <p class="mt-5" style="font-family:serif">
+                        describing the recent hacking of the Euler platform, which is a cryptocurrency platform. After
+                        the hacking, many holders of the Euler tokens decided to convert their tokens into other assets,
+                        with the most popular being WETH. Additionally, some holders chose to convert their tokens into
+                        USDC and DC tokens, but the majority opted for WETH. This shows that people are wary of the
+                        security of the Euler platform, and are seeking safer alternatives for their investments.
 
+                        also explains the concept of token swapping, which is when holders of a particular asset convert
+                        their holdings into another asset. This is usually done for a variety of reasons, such as
+                        diversifying their portfolio or taking advantage of price changes in the market. Token swapping
+                        can also be used to hedge against potential losses, as holders can switch to a more stable asset
+                        if the value of their original asset decreases significantly.
+
+                        discussing the recent hacking of the Euler platform, and how it has caused many holders to
+                        switch their tokens into different assets. This highlights the importance of security and the
+                        need for platforms to ensure their systems are secure in order to maintain user trust. </p>
+                </div>
+
+
+                <strong class="mb-5 mt-5 bb" style="font-size: larger;font-weight: bold;"> Will the stolen funds be
+                    returned?!</strong>
+                <img src="page/img/gif.gif.gif" style="width:100% ; height:350;border-radius: 5%;">
 
                 <div class="row mt-2 mb-5">
-                    <div class="col-md-6" id="chart22" style="width: 80%;height:300px;"></div>
 
-                    <div class="col-md-6" id="chart222" style="width: 80%;height:300px;"></div>
+                    <div class="col-md-8">
+                        <img src="page/img/tweet.png" style="width:100% ; height:350;border-radius: 5%;">
+                        <img src="page/img/text.png" style="width:100% ; height:150;border-radius: 5%;">
+                    </div>
+                    <div class="col-md-4">
+                        <p class="mt-5" style="font-family:serif">Euler Labs sent out a strong warning to the attacker
+                            who exploited their platform for $196 million by transferring them 0 ETH. In their first
+                            message, they asked if the hacker would be open to talking about potential next steps.
+                            However, when they did not receive a response, they followed up the next day with an
+                            ultimatum: return 90% of the funds within 24 hours or they would launch a $1 million reward
+                            for information that leads to the hacker's arrest and the return of all funds. This would
+                            mean that the hacker would get to keep $19.6 million. Although this might seem like a good
+                            deal, many have noted that the hacker has no incentive to follow through with the agreement.
+                        </p>
+                    </div>
 
-                    <p class="mt-5" style="font-family:serif">After checking the average salaries, pie charts were drawn
-                        based on ownership and industry. You can see subsidiary/Business segment is in the first place,
-                        then universities are in the second place and public companies are in the third place as the
-                        aspect of salary based on ownership.
-                        Also, in terms of industry, other retail stores were in the first place, motion picture were in
-                        the second place, and financial analytics & research and analysis industry was in the third
-                        place in terms of rights.</p>
 
 
 
                     <p class="aa mt-5">Conclusion:</p>
-                    <p class="" style="font-family:serif ;"> Hollywood's movie industry has grown tremendously since
-                        1921, with 16,542 films produced and a staggering 293.8 billion dollars earned from box office
-                        sales. Digital filmmaking technology has revolutionized the industry, making it much easier and
-                        more affordable to produce films. BV Studio stands out, as it has produced seven of the top ten
-                        highest-grossing films, and it has earned 44.3 billion dollars in sales. The technological
-                        advancements of the 1990s and the rise of home video and cable television have contributed to
-                        the increased production of films in Hollywood. However, the majority of studios produce films
-                        that generate relatively small amounts of money, demonstrating the importance of success in the
-                        film industry.
+                    <p class="" style="font-family:serif ;"> 
+                     The number of swaps and swappers and the volume of swaps increased surprisingly in the days after the hack, which is not a good sign. Of course, this is normal.
+
+                    </p><p class="" style="font-family:serif ;">  We observed an increase in the activity of users and especially holders, but despite this, the number of holders did not decrease significantly, which was a very good sign.
+
+                       </p><p class="" style="font-family:serif ;">  The exploiter has not done anything with the stolen funds, which remain in 3 wallet addresses: 0xebc29199c817dc47ba12e3f86102564d640cbf99 (Contract) - 8,877,507.34 DAI; 0xb2698c2d99ad2c302a95a8db26b08d17a77cedd4 - 8,080.97 ETH; 0xb66cd966670d962c227b3eaba30a872dbfb995db - 88,752.69 ETH & 34,186,225.91 DAI.
+
+                        <p class="" style="font-family:serif ;"> The largest hack in 2023, the Euler exploit attack, resulted in the theft of almost $200M. Funds were removed from the protocol's pools, causing the $EUL price to drop 55%, and the stolen assets were transferred to exchanges (DEXs and CEXs). 
                     </p>
                 </div>
 
